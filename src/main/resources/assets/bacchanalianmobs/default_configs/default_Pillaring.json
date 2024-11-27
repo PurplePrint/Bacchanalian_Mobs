@@ -1,0 +1,19 @@
+{
+  "Rule1": {
+    "Mob list": [
+      "minecraft:zombie",
+      "minecraft:skeleton",
+      "techguns:zombiefarmer",
+      "techguns:zombieminer",
+      "techguns:zombiesoldier"
+    ],
+    "Pillaring": true,
+    "Pillaring block": "minecraft:cobblestone",
+    "Conditions": {
+      "Group1": {
+        "Dimensions": [0, 10],
+        "Biomes": "ALL"
+      }
+    }
+  }
+}

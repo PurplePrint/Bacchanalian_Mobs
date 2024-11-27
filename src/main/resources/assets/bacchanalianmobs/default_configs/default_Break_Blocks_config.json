@@ -1,0 +1,75 @@
+{
+  "Rule1": {
+    "Mobs": [
+      "minecraft:zombie",
+      "techguns:zombiefarmer",
+      "techguns:soldier",
+      "techguns:miner",
+      "minecraft:skeleton"
+    ],
+    "Break soft blocks": true,
+    "Required tool for soft blocks": false,
+    "Soft blocks break speed multiplier": 50,
+    "Soft blocks break speed multiplier (without tool)": 20,
+    "Break stone blocks": true,
+    "Required tool for stone blocks": true,
+    "Stone blocks break speed multiplier": 200,
+    "Stone blocks break speed multiplier (without tool)": 80,
+    "Allow turret blocks destroying": true,
+    "Required tool for turret destroying": true,
+    "Turret blocks break speed": 40,
+    "Use turret block hardness": true,
+    "Conditions": {
+      "Group1": {
+        "Dimensions": "ALL",
+        "difficulty": [280, "x"]
+      },
+      "Group2": {
+        "stages": ["+midgame", "+doom", "-earlygame"]
+      },
+      "Group3": {
+        "Dimensions": [0, -1, 10]
+      }
+    }
+  },
+
+  "Rule2": {
+    "Mobs": [
+      "srparasites:ada_bolster",
+      "srparasites:ada_yelloweye",
+      "srparasites:warden",
+      "srparasites:ada_arachnida",
+      "srparasites:rupter",
+      "srparasites:bogle",
+      "srparasites:ada_manducater"
+    ],
+    "Break soft blocks": false,
+    "Allow turret blocks destroying": true,
+    "Required tool for turret destroying": false,
+    "Turret blocks break speed": 400,
+    "Use turret block hardness": true,
+    "Conditions": {
+      "Group1": {
+        "Dimensions": "ALL",
+        "difficulty": [280, "x"]
+      },
+      "Group2": {
+        "stages": ["+midgame", "+doom", "-earlygame"]
+      },
+      "Group3": {
+        "Dimensions": [0, -1, 10]
+      }
+    }
+  },
+
+  "Feral": {
+    "Mobs": [
+      "srparasites:fer_human"
+    ],
+    "Break soft blocks": true,
+    "Break stone blocks": true,
+    "Required tool for stone blocks": false,
+    "Stone blocks break speed multiplier": 200,
+    "Stone blocks break speed multiplier (without tool)": 80
+  }
+}

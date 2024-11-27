@@ -1,0 +1,31 @@
+{
+	"Rules": {
+		"Rule n1": {
+			"Mob list": [
+				"minecraft:cow",
+				"minecraft:chicken"
+			],
+			"Points": -10.5,
+			"Conditions": {
+				"1": {
+					"Dimensions": "ALL",
+					"Biomes": ["minecraft:void", "minecraft:desert", "minecraft:plains"],
+					"yRange": [20, "x"],
+					"Evolution phases": [0, 1, 2]
+				}
+			}
+		},
+		"Rule n2": {
+			"Mob list": [
+				"minecraft:pig"
+			],
+			"Points": 14,
+			"Conditions": {
+				"1": {
+					"Dimensions": [-1, 1],
+					"yRange": ["x", 50]
+				}
+			}
+		}
+	}
+}

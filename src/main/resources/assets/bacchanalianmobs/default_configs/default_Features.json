@@ -1,0 +1,107 @@
+{
+  "Rules": {
+    "Generic": {
+      "Mob list": [
+        "minecraft:zombie",
+        "minecraft:skeleton",
+        "techguns:zombiesoldier",
+        "techguns:zombiefarmer",
+        "techguns:zombieminer"
+      ],
+      "Features": {
+        "AvoidExplosions": true,
+        "Contusion": {
+          "MaxDistance": 10,
+          "MaxDuration": 600,
+          "DurationMultiplier": 1.0
+        },
+        "Leap": {
+          "MaxFarDistance": 7,
+          "TimeToFocus": 10,
+          "MaxSightAngleToFocus": 1,
+          "MaxMoveAngleToFocus": 1
+        },
+        "Riding": {
+          "HorseType": "Zombie",
+          "chance_basic": 20,
+          "Difficulty_target": 60,
+          "Difficulty_min": 15,
+          "Difficulty_max": 200
+        }
+      },
+      "Conditions": {
+        "C1": {
+          "Dimensions": [0, 10, -1]
+        }
+      }
+    },
+
+    "Rule n1": {
+      "Mob list": [
+        "minecraft:spider"
+      ],
+      "Features": {
+        "ThrowWeb": {
+          "chance": 50,
+          "maxDistanceToThrow": 30,
+          "velocity": 1.0,
+          "inaccuracy": 2.0
+        },
+        "WebOnAttack_Attacker": true,
+        "WebOnAttack_Victim": true,
+        "TempWebBehind": {
+          "WebSearchRadius": 4,
+          "LifeSpan": 80
+        }
+      },
+      "Conditions": {
+        "C1": {
+          "Dimensions": [0, 10, -1],
+          "difficulty": [100, "x"]
+        }
+      }
+    },
+
+    "Rule n2": {
+      "Mob list": [
+        "minecraft:creeper"
+      ],
+      "Features": {
+        "ChargedCreeper": {
+          "Chance_basic": 90
+        },
+        "Breach": {
+          "MaxDistanceToTarget": 10
+        }
+      },
+      "Conditions": {
+        "C1": {
+          "Dimensions": [0, 10, -1]
+        }
+      }
+    },
+
+    "Enderman Swap": {
+      "Mob list": [
+        "minecraft:enderman"
+      ],
+      "Features": {
+        "EnderSwap": {
+          "minDistance": 3,
+          "maxDistance": 40,
+          "Cooldown": 800,
+          "playSound": true,
+          "debuffEffects": [
+            ["minecraft:nausea", 200],
+            ["minecraft:slowness", 400, 1]
+          ]
+        }
+      },
+      "Conditions": {
+        "C1": {
+          "Dimensions": [0, 10, -1, 1]
+        }
+      }
+    }
+  }
+}

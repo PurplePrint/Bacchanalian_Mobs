@@ -1,0 +1,84 @@
+{
+	"Appointments": {
+		"Meele_n1": {
+			"Type": "MAIN_HAND",
+			"Basic Chance": 10,
+			"Item Group Name": "spartan weaponry for early game N2",
+			"Difficulty Multiplier": {
+				"Difficulty Min": 120,
+				"Difficulty Max": 600,
+				"Target Difficulty": 300
+			},
+			"Conditions": {
+				"Group1": {
+					"dimensionID": 0,
+          			"biomeID": "minecraft:desert"
+				},
+				"Group2": {
+					"dimensionID": -1,
+					"yRange": [60, "x"]
+				}
+			},
+			"Conditions To Force": {
+				"Group1": {
+					"difficulty": [500, 600]
+				},
+				"Group2": {
+					"dimensionID": 1,
+					"stages": ["domination", "unlockthedoom"]
+				}
+			}
+		},
+		"Meele_additional": {
+			"Type": "OFF_HAND",
+			"Basic Chance": 100,
+			"Item Group Name": "Axe"
+		}
+	},
+	"Item Groups": {
+		"spartan weaponry for early game N2": [
+			["minecraft:diamond_pickaxe", 50, 30, 200, 50, 60],
+			["minecraft:iron_sword", 75]
+		],
+		"Axe": [
+			["minecraft:diamond_axe", 100]
+		]
+	},
+	"Rules": {
+		"Meele weapon mobs": {
+			"Mob List": [
+				"minecraft:zombie",
+				"techguns:zombiefarmer",
+				"zombie_villager"
+			],
+			"Appointments": {
+				"MAIN_HAND": "Meele_n1",
+				"OFF_HAND": "NONE",
+				"HEAD": "NONE",
+				"CHEST": "NONE",
+				"LEGS": "NONE",
+				"FEET": "NONE"
+			},
+			"Conditions": {
+				"Group1": {
+					"yRange": ["x", 80]
+				}
+			}
+		},
+		"My Java skills": {
+			"Mob List": [
+				"minecraft:zombie",
+				"techguns:zombiefarmer",
+				"zombie_villager"
+			],
+			"Appointments": {
+				"MAIN_HAND": "NONE",
+				"OFF_HAND": "Meele_additional",
+				"HEAD": "NONE",
+				"CHEST": "NONE",
+				"LEGS": "NONE",
+				"FEET": "NONE"
+			}
+		}
+	}
+}

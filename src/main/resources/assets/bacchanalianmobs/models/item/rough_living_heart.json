@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "bacchanalianmobs:items/rough_living_heart"
+  }
+}

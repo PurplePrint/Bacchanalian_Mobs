@@ -1,0 +1,30 @@
+{
+	"Rules": {
+		"Rule n1": {
+			"Mob list": [
+				"minecraft:skeleton",
+				"minecraft:cow",
+				"minecraft:villager"
+			],
+			"Effects": {
+				"Slowness": {
+					"EffectID": "minecraft:slowness",
+					"Level": 2,
+					"Duration": [3, 3, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+				},
+				"Regeneration": {
+					"EffectID": "minecraft:regeneration",
+					"Level": 2,
+					"Infinite": true
+				}
+			},
+			"Conditions": {
+				"1": {
+					"Dimensions": "ALL",
+					"Biomes": ["minecraft:void", "minecraft:desert", "minecraft:plains"],
+					"Evolution phases": [0, 1, 2]
+				}
+			}
+		}
+	}
+}
